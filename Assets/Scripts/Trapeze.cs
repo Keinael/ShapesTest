@@ -6,19 +6,14 @@ public class Trapeze : Shapes
     public float SideB;
     public float Height;
 
-    public Color Color;
+    private Color _color;
 
     public Trapeze(float sideA, float sideB, float height, Color color)
     {
         SideA = sideA;
         SideB = sideB;
         Height = height;
-        Color = color;
-    }
-
-    public override float[] GetAdditionalInfo()
-    {
-        return new[] {SideA, SideB, Height};
+        _color = color;
     }
 
     public override void Draw()
@@ -33,6 +28,6 @@ public class Trapeze : Shapes
 
     public override Color GetColor()
     {
-        return Color;
+        return _color;
     }
 }

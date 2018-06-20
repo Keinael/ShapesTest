@@ -3,17 +3,13 @@
 public class Circle : Shapes
 {
     public float Radius;
-    public Color Color;
+    
+    private Color _color;
 
     public Circle(float radius, Color color)
     {
         Radius = radius;
-        Color = color;
-    }
-
-    public override float[] GetAdditionalInfo()
-    {
-        return new[] {Radius};
+        _color = color;
     }
 
     public override void Draw()
@@ -23,11 +19,11 @@ public class Circle : Shapes
 
     public override float GetArea()
     {
-        return Mathf.PI * (Radius * 2);
+        return Mathf.Pow(Radius, 2) * Mathf.PI;
     }
 
     public override Color GetColor()
     {
-        return Color;
+        return _color;
     }
 }

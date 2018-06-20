@@ -16,9 +16,4 @@ public abstract class Shapes
     {
         return Color.black;
     }
-
-    public virtual float[] GetAdditionalInfo()
-    {
-        return new[] {0f};
-    }
 }

@@ -3,17 +3,13 @@
 public class Square : Shapes
 {
     public float SideLength;
-    public Color Color;
+    
+    private Color _color;
 
     public Square(float sideLength, Color color)
     {
         SideLength = sideLength;
-        Color = color;
-    }
-
-    public override float[] GetAdditionalInfo()
-    {
-        return new[] {SideLength};
+        _color = color;
     }
 
     public override void Draw()
@@ -28,6 +24,6 @@ public class Square : Shapes
 
     public override Color GetColor()
     {
-        return Color;
+        return _color;
     }
 }

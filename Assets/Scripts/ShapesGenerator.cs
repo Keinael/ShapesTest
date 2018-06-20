@@ -15,11 +15,11 @@ public class ShapesGenerator
         return randomShapesList;
     }
 
-    public Shapes GetRandomShape()
+    private Shapes GetRandomShape()
     {
         Shapes shape = null;
 
-        switch (Random.Range(1, 4))
+        switch (Random.Range(1, 5))
         {
             case 1:
                 shape = new Square(Random.Range(1f, 10f), GetRandomColor());
@@ -28,11 +28,12 @@ public class ShapesGenerator
                 shape = new Circle(Random.Range(1f, 10f), GetRandomColor());
                 break;
             case 3:
-                shape = new RightTriangle(Random.Range(1f, 10f), Random.Range(1f, 10f), Random.Range(1f, 10f),
+                shape = new RightTriangle(Random.Range(1f, 10f), Random.Range(1f, 10f),
                     Random.Range(1f, 10f), GetRandomColor());
                 break;
             case 4:
-                shape = new Trapeze(Random.Range(1f, 10f), Random.Range(1f, 10f), Random.Range(1f, 5f), GetRandomColor());
+                shape = new Trapeze(Random.Range(1f, 10f), Random.Range(1f, 10f), Random.Range(1f, 5f),
+                    GetRandomColor());
                 break;
             default:
                 Debug.Log("Shape is not generated");
