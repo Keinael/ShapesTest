@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public abstract class Shapes
+public class Shapes
 {
     public virtual void Draw()
     {

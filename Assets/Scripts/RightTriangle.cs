@@ -2,17 +2,20 @@
 
 public class RightTriangle : Shapes
 {
-    public float SideA;
-    public float SideB;
-    public float Hypotenuse;
-    
+    public float SideA { get; private set; }
+    public float SideB { get; private set; }
+
+    public float Hypotenuse
+    {
+        get { return Mathf.Sqrt(SideA * SideA + SideB * SideB); }
+    }
+
     private Color _color;
 
-    public RightTriangle(float sideA, float sideB, float hypotenuse, Color color)
+    public RightTriangle(float sideA, float sideB, Color color)
     {
         SideA = sideA;
         SideB = sideB;
-        Hypotenuse = hypotenuse;
         _color = color;
     }
 

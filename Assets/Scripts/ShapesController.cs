@@ -15,29 +15,33 @@ public class ShapesController : MonoBehaviour
             if (shape is Square)
             {
                 var square = shape as Square;
-                Debug.Log("Shape: " + square.GetType() + ". Area = " + square.GetArea() + ". Color: " + square.GetColor() +
+                Debug.Log("Shape: " + square.GetType() + ". Area = " + square.GetArea() + ". Color: " +
+                          square.GetColor() +
                           ". Additional info: Side length = " + square.SideLength);
             }
 
             if (shape is Circle)
             {
                 var circle = shape as Circle;
-                Debug.Log("Shape: " + circle.GetType() + ". Area = " + circle.GetArea() + ". Color: " + circle.GetColor() +
+                Debug.Log("Shape: " + circle.GetType() + ". Area = " + circle.GetArea() + ". Color: " +
+                          circle.GetColor() +
                           ". Additional info: Radius = " + circle.Radius);
             }
 
             if (shape is Trapeze)
             {
                 var trapeze = shape as Trapeze;
-                Debug.Log("Shape: " + trapeze.GetType() + ". Area = " + trapeze.GetArea() + ". Color: " + trapeze.GetColor() +
-                          ". Additional info: Height = " + trapeze.Height + ", Side a = " + trapeze.SideA +
-                          ", Side b = " + trapeze.SideB);
+                Debug.Log("Shape: " + trapeze.GetType() + ". Area = " + trapeze.GetArea() + ". Color: " +
+                          trapeze.GetColor() +
+                          ". Additional info: Height = " + trapeze.Height + ", Side a = " + trapeze.BasisA +
+                          ", Side b = " + trapeze.BasisB);
             }
 
             if (shape is RightTriangle)
             {
                 var rightTriangle = shape as RightTriangle;
-                Debug.Log("Shape: " + rightTriangle.GetType() + ". Area = " + rightTriangle.GetArea() + ". Color: " + rightTriangle.GetColor() +
+                Debug.Log("Shape: " + rightTriangle.GetType() + ". Area = " + rightTriangle.GetArea() + ". Color: " +
+                          rightTriangle.GetColor() +
                           ". Additional info: Hypotenuse = " + rightTriangle.Hypotenuse + ", Side a = " +
                           rightTriangle.SideA + ", Side b = " +
                           rightTriangle.SideB);

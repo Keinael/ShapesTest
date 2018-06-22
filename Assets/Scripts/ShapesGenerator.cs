@@ -28,8 +28,7 @@ public class ShapesGenerator
                 shape = new Circle(Random.Range(1f, 10f), GetRandomColor());
                 break;
             case 3:
-                shape = new RightTriangle(Random.Range(1f, 10f), Random.Range(1f, 10f),
-                    Random.Range(1f, 10f), GetRandomColor());
+                shape = new RightTriangle(Random.Range(1f, 10f), Random.Range(1f, 10f), GetRandomColor());
                 break;
             case 4:
                 shape = new Trapeze(Random.Range(1f, 10f), Random.Range(1f, 10f), Random.Range(1f, 5f),

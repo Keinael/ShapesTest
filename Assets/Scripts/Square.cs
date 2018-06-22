@@ -3,7 +3,7 @@
 public class Square : Shapes
 {
     public float SideLength;
-    
+
     private Color _color;
 
     public Square(float sideLength, Color color)

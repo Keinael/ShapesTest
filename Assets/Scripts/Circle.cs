@@ -2,8 +2,8 @@
 
 public class Circle : Shapes
 {
-    public float Radius;
-    
+    public float Radius { get; private set; }
+
     private Color _color;
 
     public Circle(float radius, Color color)
